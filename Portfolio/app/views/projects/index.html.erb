@@ -1,0 +1,7 @@
+<h1 id="dive">Projects</h1>
+
+<% @repos.each do |repo| %>
+<p >
+  <%= link_to repo['name'], repo['html_url'] %>
+</p>
+<% end %>
